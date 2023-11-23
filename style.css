@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: linear-gradient(to left, #464646, #000000);
+    color: #fff;
+}
+.header h1, .header p{
+    margin-left: 16%;
+}
+.brewery_type{
+    margin-right: 16%;
+    margin-left: 16%;
+
+}
+.grid-container {
+    background: #fff;
+    color: #000;
+    margin-right: 16%;
+    margin-left: 16%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,230px)); /* Set the width of each column to 250px */
+    gap: 30px;
+}
+.label-filter{
+    font-weight: bold;
+}
+select {
+    height: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.item {
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); 
+    height: 280px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+.item:hover{
+    background: rgb(239, 239, 235);
+    transform: scale(1.02);
+}
+.nameRow {
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    border-bottom: none;
+    text-align: left;
+}
+.nameRow a{
+    text-decoration: none;
+    color: black
+}
+.nameRow a:hover{
+    text-decoration:underline;
+    color: black
+}
+.nameRow p{
+    font-size: small;
+    font-weight: 500;
+    color: #4b4b4b;
+}
+.categoryRow {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
+    height: 15%;
+}
+.colorBox {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 2px;
+    border-radius: 4px;
+}
+#pagination {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    align-content: center;
+    border: 1px solid #8f8f8f;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#pagination a::after{
+    background-color: #000000;
+}
+#pagination a:hover {
+    background-color: #393939;
+    color: #fff;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center;
+    padding-top: 40px;
+    background: #f4f3f3;
+    color: #000;
+}
+.breweries-details{
+    margin-top: 5px;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-bottom: 10px;
+}
+.btn-back a{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color:#393939;
+    font-size: small;
+}
+#breweries-info-container {
+    box-shadow: -5px 5px 10px rgba(100, 100, 100, 0.3);
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+.selected-brewery-details{
+    padding: 20px 10px;
+    color: #393939;
+}
+.selected-brewery-details h1{
+    padding-bottom: 15px;
+}
+.selected-brewery-details p{
+    font-size: small;
+}
